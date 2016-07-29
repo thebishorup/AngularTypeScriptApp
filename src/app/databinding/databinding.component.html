@@ -1,0 +1,29 @@
+<div style="border: 1px solid green; padding: 10px;">
+    <h3>String Interpolation</h3>
+    <p>
+    {{ stringInterpolation }}
+    </p>
+    <p>
+        {{ numberInterpolation }}
+    </p>
+</div>
+
+<div style="border: 1px solid red; padding: 10px; margin:20px 0 20px 0;">
+    <h3>Properties Binding</h3>
+    
+    <input style="padding:5px; width:200px;" type="text" name="" value="{{stringInterpolation}}">
+    <!--Attribute Binding-->
+    <input style="padding:5px; width:200px;" type="text" name="" [value]="numberInterpolation">
+
+    <p [ngClass]="{boldBlueText: true}">This is ngClass directive binding</p>
+    <p [ngClass]="{boldBlueText: onTest()}">This is ngClass directive binding</p>
+
+    <p [ngStyle]="{color: 'Orange'}">This is ngStyle attribute binding</p>
+    
+</div>
+
+<div>
+    <h3>Custom Property Binding</h3>
+    <fa-property-binding [result]="10"></fa-property-binding>
+</div>
+
